@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NB CARZONE | Buy a Car</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="buy.html">Buy</a></li>
+      <li><a href="purchase.html">Purchase</a></li>
+      <li><a href="rent.html">Rent</a></li>
+      <li><a href="register.html">Register</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="hero--sm" style="background-image: url('images/buy-hero.jpg');">
+    <div class="hero-overlay">
+      <h1 class="hero-title">Find Your Next Car</h1>
+      <p class="hero-subtitle">Click a vehicle to see full pricing</p>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <section class="section">
+
+      <!-- Search Filter -->
+      <div class="car-filter">
+        <input 
+          type="text" 
+          id="searchInput" 
+          placeholder="Search by car name..." 
+          aria-label="Search cars by name"
+          
+        />
+      </div>
+
+      <!-- Car Grid -->
+      <div class="car-grid">
+        <!-- Repeat this block for each car -->
+        <a href="purchase.html?model=corolla" class="car-card" aria-label="Buy Toyota Corolla">
+          <img src="corolla.jpg" alt="Toyota Corolla" title="Toyota Corolla">
+          <span class="car-name">Toyota Corolla</span>
+        </a>
+
+        <a href="purchase.html?model=model3" class="car-card" aria-label="Buy Tesla Model 3">
+          <img src="tesla3.jpg" alt="Tesla Model 3" title="Tesla Model 3">
+          <span class="car-name">Tesla Model 3</span>
+        </a>
+
+        <a href="purchase.html?model=3series" class="car-card" aria-label="Buy BMW 3 Series">
+          <img src="bmw3.jpg" alt="BMW 3 Series" title="BMW 3 Series">
+          <span class="car-name">BMW 3 Series</span>
+        </a>
+
+        <a href="purchase.html?model=accord" class="car-card" aria-label="Buy Honda Accord">
+          <img src="accord.jpg" alt="Honda Accord" title="Honda Accord">
+          <span class="car-name">Honda Accord</span>
+        </a>
+
+        <a href="purchase.html?model=camry" class="car-card" aria-label="Buy Toyota Camry">
+          <img src="camry.jpg" alt="Toyota Camry" title="Toyota Camry">
+          <span class="car-name">Toyota Camry</span>
+        </a>
+
+        <a href="purchase.html?model=prius" class="car-card" aria-label="Buy Toyota Prius">
+          <img src="prius.jpg" alt="Toyota Prius" title="Toyota Prius">
+          <span class="car-name">Toyota Prius</span>
+        </a>
+
+        <a href="purchase.html?model=civic" class="car-card" aria-label="Buy Honda Civic">
+          <img src="civic.jpg" alt="Honda Civic" title="Honda Civic">
+          <span class="car-name">Honda Civic</span>
+        </a>
+
+        <a href="purchase.html?model=focus" class="car-card" aria-label="Buy Ford Focus">
+          <img src="focus.jpg" alt="Ford Focus" title="Ford Focus">
+          <span class="car-name">Ford Focus</span>
+        </a>
+
+        <a href="purchase.html?model=fusion" class="car-card" aria-label="Buy Ford Fusion">
+          <img src="fussion.jpg" alt="Ford Fusion" title="Ford Fusion">
+          <span class="car-name">Ford Fusion</span>
+        </a>
+
+        <a href="purchase.html?model=bmw5" class="car-card" aria-label="Buy BMW 5 Series">
+          <img src="bmw5.jpg" alt="BMW 5 Series" title="BMW 5 Series">
+          <span class="car-name">BMW 5 Series</span>
+        </a>
+
+        <a href="purchase.html?model=teslay" class="car-card" aria-label="Buy Tesla Model Y">
+          <img src="teslay.jpg" alt="Tesla Model Y" title="Tesla Model Y">
+          <span class="car-name">Tesla Model Y</span>
+        </a>
+
+        <a href="purchase.html?model=teslas" class="car-card" aria-label="Buy Tesla Model S">
+          <img src="teslas.jpg" alt="Tesla Model S" title="Tesla Model S">
+          <span class="car-name">Tesla Model S</span>
+        </a>
+      </div>
+
+    </section>
+  </main>
+
+</body>
+</html>

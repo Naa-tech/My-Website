@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NB CARZONE | Rent a Car</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+</head>
+<body>
+ <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="buy.html">Buy</a></li>
+      <li><a href="purchase.html">Purchase</a></li>
+      <li><a href="rent.html">Rent</a></li>
+      <li><a href="register.html">Register</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <header class="hero--sm" style="background-image:url('images/rent-hero.jpg');">
+    <div class="hero-overlay">
+      <h1 class="hero-title">Flexible Rentals</h1>
+      <p class="hero-subtitle">Pick a model and duration to see total cost</p>
+    </div>
+  </header>
+
+  <section class="section">
+    <form id="rentForm" class="card" action="#" method="post">
+      <div class="form-group">
+        <label for="rentName">Full Name</label>
+        <input id="rentName" name="rentName" type="text" required />
+      </div>
+
+      <div class="form-group">
+        <label for="rentModel">Car Model</label>
+        <select id="rentModel" name="rentModel" required>
+          <option value="">— Select —</option>
+          <option value="corolla">Toyota Corolla</option>
+          <option value="camry">Toyota Camry</option>
+          <option value="prius">Toyota Prius</option>
+          <option value="civic">Honda Civic</option>
+          <option value="accord">Honda Accord</option>
+          <option value="focus">Ford Focus</option>
+          <option value="fusion">Ford Fusion</option>
+          <option value="3series">BMW 3 Series</option>
+          <option value="5series">BMW 5 Series</option>
+          <option value="model3">Tesla Model 3</option>
+          <option value="modely">Tesla Model Y</option>
+          <option value="models">Tesla Model S</option>
+        </select>
+      </div>
+
+      <p style="text-align:center;margin:-.3rem 0 1rem;font-weight:600;">
+        Daily rate: <span id="rentPrice">--</span>
+      </p>
+
+      <div class="form-group">
+        <label for="duration">Duration (days)</label>
+        <input id="duration" name="duration" type="number" min="1" required />
+      </div>
+
+      <p style="text-align:center;font-weight:700;margin:-.3rem 0 1.2rem;">
+        Total: <span id="totalPrice">--</span>
+      </p>
+
+      <input class="primary-btn" type="submit" value="Send Request" />
+    </form>
+  </section>
+</body>
+</html>

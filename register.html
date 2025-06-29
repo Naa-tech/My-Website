@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CarZone | Driver Registration</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="buy.html">Buy</a></li>
+      <li><a href="purchase.html">Purchase</a></li>
+      <li><a href="rent.html">Rent</a></li>
+      <li><a href="register.html">Register</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <header class="hero hero--sm hero--register" style="background-image:url('');">
+    <div class="hero-overlay">
+      <h1 class="hero-title">Become a Partner Driver</h1>
+      <p class="hero-subtitle">Earn up to <strong>$1,200/wk</strong> behind the wheel</p>
+    </div>
+  </header>
+
+  <section class="section fade-in">
+    <h2 class="section-title">Registration Steps</h2>
+    <div class="split-wrap">
+      <ol class="benefits" style="list-style:decimal;padding-left:1.25rem">
+        <li>Fill out the sign‑up form</li>
+        <li>Upload license & documents</li>
+        <li>Complete background check</li>
+        <li>Book your onboarding session</li>
+      </ol>
+
+      <form class="card" action="#" method="post">
+        <div class="form-group">
+          <label for="regName">Full Name</label>
+          <input id="regName" name="regName" type="text" required />
+        </div>
+
+        <div class="form-group">
+          <label for="regEmail">Email</label>
+          <input id="regEmail" name="regEmail" type="email" required />
+        </div>
+
+        <div class="form-group">
+          <label for="regPhone">Phone</label>
+          <input id="regPhone" name="regPhone" type="tel" required />
+        </div>
+
+        <div class="form-group">
+          <label for="driverType">Driver Type</label>
+          <select id="driverType" name="driverType" required>
+            <option value="">— Select —</option>
+            <option value="taxi">Taxi</option>
+            <option value="uber">Uber</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="license">License Number</label>
+          <input id="license" name="license" type="text" required />
+        </div>
+
+        <input class="primary-btn" type="submit" value="Register Now" />
+      </form>
+    </div>
+  </section>
+</body>
+</html>
